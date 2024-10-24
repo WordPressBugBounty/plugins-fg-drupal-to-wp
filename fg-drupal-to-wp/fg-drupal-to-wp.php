@@ -16,7 +16,7 @@
  * Plugin Name:       FG Drupal to WordPress
  * Plugin URI:        https://wordpress.org/plugins/fg-drupal-to-wp/
  * Description:       A plugin to migrate articles, pages, categories, tags, images from Drupal to WordPress
- * Version:           3.77.0
+ * Version:           3.81.0
  * Author:            Frédéric GILLES
  * Author URI:        https://www.fredericgilles.net/
  * License:           GPLv2 or later
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'FGD2WP_PLUGIN_VERSION', '3.77.0' );
+define( 'FGD2WP_PLUGIN_VERSION', '3.81.0' );
 
 /**
  * The code that runs during plugin activation.

@@ -3,8 +3,8 @@ Contributors: Kerfred
 Plugin Uri: https://wordpress.org/plugins/fg-drupal-to-wp/
 Tags: drupal, importer, migration, cck, ubercart
 Requires at least: 4.5
-Tested up to: 6.6.1
-Stable tag: 3.77.0
+Tested up to: 6.7
+Stable tag: 3.81.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,7 @@ A plugin to migrate articles, stories, pages, categories, tags, images from Drup
 
 This plugin migrates articles, stories, pages, categories, tags and images from Drupal to WordPress.
 
-It has been tested with **Drupal 4, 5, 6, 7, 8, 9 & 10** and the latest version of WordPress. It is compatible with multisite installations.
+It has been tested with **Drupal 4 to 11** and the latest version of WordPress. It is compatible with multisite installations.
 
 Major features include:
 
@@ -190,6 +190,11 @@ You can read this post to fix it: http://forumsarchive.laravel.io/viewtopic.php?
 Don't hesitate to let a comment on the [forum](https://wordpress.org/support/plugin/fg-drupal-to-wp) or to report bugs if you found some.
 
 == Changelog ==
+
+= 3.81.0 =
+* New: Add the hook "fgd2wp_pre_process_node_body"
+* Tested with Drupal 11
+* Tested with WordPress 6.7
 
 = 3.77.0 =
 * New: Add the function get_node()
@@ -459,6 +464,7 @@ Don't hesitate to let a comment on the [forum](https://wordpress.org/support/plu
 
 == Upgrade Notice ==
 
-= 3.77.0 =
-New: Add the function get_node()
-Tested with WordPress 6.6.1
+= 3.81.0 =
+New: Add the hook "fgd2wp_pre_process_node_body"
+Tested with Drupal 11
+Tested with WordPress 6.7

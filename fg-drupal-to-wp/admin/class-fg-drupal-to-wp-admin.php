@@ -1946,6 +1946,14 @@ SQL;
 				$node = array_merge($node, $body);
 			}
 			
+			// Hook for modifying the Drupal body before processing
+			if ( isset($node['body_value']) ) {
+				$node['body_value'] = apply_filters('fgd2wp_pre_process_node_body', $node['body_value']);
+			}
+			if ( isset($node['body_summary']) ) {
+				$node['body_summary'] = apply_filters('fgd2wp_pre_process_node_body', $node['body_summary']);
+			}
+			
 			// Hook for modifying the Drupal node before processing
 			$node = apply_filters('fgd2wp_pre_process_node', $node);
 			
