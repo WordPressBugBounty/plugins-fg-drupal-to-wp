@@ -114,7 +114,7 @@ if ( !class_exists('FG_Drupal_to_WordPress_Download_FTP', false) ) {
 					// SFTP
 					if ( class_exists('WP_Filesystem_SSH2') ) {
 						if ( isset($this->plugin->ftp_options['private_key_file']) && !empty($this->plugin->ftp_options['private_key_file']) ) {
-							$this->plugin->ftp_options['private_key'] = wp_remote_get($this->plugin->ftp_options['private_key_file']);
+							$this->plugin->ftp_options['private_key'] = file_get_contents($this->plugin->ftp_options['private_key_file']);
 						}
 						$this->ftp = new WP_Filesystem_SSH2($this->plugin->ftp_options);
 					} else {
